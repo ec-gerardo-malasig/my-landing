@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="">
+        <ul class="brand">
+            <li>
+                <a href="">Rogue Fitness</a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li>
+                <a href="">Pricing</a>
+            </li>
+            <li>
+                <a href="">Product</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="title">
+            <h1>Pricing</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem suscipit aperiam impedit magni libero molestiae dolores. Quis possimus quia nesciunt quibusdam sint soluta autem vel impedit, illo quidem qui distinctio.</p>
+        </div>
+        <div class="content">
+            <div class="box" id="free">
+                <div class="header">
+                    <h1>Free</h1>
+                </div>
+                <div class="body">
+                    <h2>$0/ Mo.</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima voluptatibus dolorem animi soluta, dolores, cupiditate beatae officia porro provident laboriosam dignissimos inventore. Nostrum, eveniet tempora! Maxime labore laborum ea velit.</p>
+                </div>
+                <a href="" class="button">
+                    <p >Sign up for free</p>
+                </a>
+            </div>
+            <div class="box">
+                <div class="header">
+                    <h1>Pro</h1>
+                </div>
+                <div class="body">
+                    <h2>$15/ Mo.</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima voluptatibus dolorem animi soluta, dolores, cupiditate beatae officia porro provident laboriosam dignissimos inventore. Nostrum, eveniet tempora! Maxime labore laborum ea velit.</p>
+                </div>
+                <a href="" class="button">
+                    <p >Get started</p>
+                </a>
+            </div>
+            <div class="box">
+                <div class="header">
+                    <h1>Enterprise</h1>
+                </div>
+                <div class="body">
+                    <h2>$20/ Mo.</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima voluptatibus dolorem animi soluta, dolores, cupiditate beatae officia porro provident laboriosam dignissimos inventore. Nostrum, eveniet tempora! Maxime labore laborum ea velit.</p>
+                </div>
+                <a href="" class="button">
+                    <p >Contact us</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+<script>
+    class Rectangle {
+        constructor(w, h){
+            this.w = w;
+            this.h = h;
+        }
+        
+    }
+
+    Rectangle.prototype.area = function(){
+        return this.w * this.h
+    }
+
+    class Square extends Rectangle{
+        constructor(w){
+            this.w = w
+        }
+        area(){}
+
+    }
+
+    if (JSON.stringify(Object.getOwnPropertyNames(Square.prototype)) === JSON.stringify([ 'constructor' ])) {
+    const rec = new Rectangle(3, 4);
+    const sqr = new Square(3);
+    
+        console.log(rec.area());
+        console.log(sqr.area());
+    } else {
+        console.log(JSON.stringify(Object.getOwnPropertyNames(Square.prototype)));
+        console.log(JSON.stringify([ 'constructor' ]));
+    }
+
+    console.log()
+</script>
+</body>
+</html>
